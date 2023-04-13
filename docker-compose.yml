@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  typescript-plane-boilerplate-db:
+    build: ./db
+    volumes:
+      - ./db/data:/var/lib/mysql
+      - ./db/initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - '3306:3306'
+    environment:
+      TZ: 'Asia/Tokyo'
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: maindb
+
+  typescript-plane-boilerplate-schema:
+    depends_on:
+      - typescript-plane-boilerplate-db
+    image: schemaspy/schemaspy:snapshot
+    volumes:
+      - ./packages/erd/src:/output
+      - ./packages/erd/schemaspy.properties:/config/schemaspy.properties
+    command: ['-configFile', '/config/schemaspy.properties', '-connprops', "useSSL\\=false"]
