@@ -43,10 +43,10 @@
       "packages/*"
     ],
     "nohoist": [
-      "**/@typescript-plane-boilerplate/admin/",
-      "**/@typescript-plane-boilerplate/admin/**",
-      "**/@typescript-plane-boilerplate/web/",
-      "**/@typescript-plane-boilerplate/web/**"
+      "**/@load-test-boilerplate/admin/",
+      "**/@load-test-boilerplate/admin/**",
+      "**/@load-test-boilerplate/web/",
+      "**/@load-test-boilerplate/web/**"
     ]
   },
   "husky": {

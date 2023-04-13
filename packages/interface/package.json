@@ -1,5 +1,5 @@
 {
-  "name": "@typescript-plane-boilerplate/interface",
+  "name": "@load-test-boilerplate/interface",
   "version": "0.0.1",
   "private": true,
   "main": "cjs/index.js",

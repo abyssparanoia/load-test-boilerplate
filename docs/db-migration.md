@@ -7,11 +7,11 @@
 - migration file 作成
 
 ```sh
-> yarn workspace @typescript-plane-boilerplate/backend migration:generate -n added_displayname
+> yarn workspace @load-test-boilerplate/backend migration:generate -n added_displayname
 ```
 
 - migration を走らせる
 
 ```sh
-> yarn workspace @typescript-plane-boilerplate/backend migration:run
+> yarn workspace @load-test-boilerplate/backend migration:run
 ```

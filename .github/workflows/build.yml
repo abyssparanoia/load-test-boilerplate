@@ -46,8 +46,8 @@ jobs:
 
       - name: Run DB migration
         run: |
-          yarn workspace @typescript-plane-boilerplate/backend migration:run
-          yarn workspace @typescript-plane-boilerplate/backend migration:generate -n ci_check || echo "No changes in database schema were found"
+          yarn workspace @load-test-boilerplate/backend migration:run
+          yarn workspace @load-test-boilerplate/backend migration:generate -n ci_check || echo "No changes in database schema were found"
 
       - name: Check diff
         run: |

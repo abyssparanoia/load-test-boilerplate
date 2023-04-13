@@ -5,7 +5,7 @@ import {
   ListUsersResponse,
   UpdateUserResponse,
   newPagination
-} from '@typescript-plane-boilerplate/interface'
+} from '@load-test-boilerplate/interface'
 import { Body, Controller, Delete, Get, Param, Patch, Post, Query } from '@nestjs/common'
 import { ApiOperation, ApiTags } from '@nestjs/swagger'
 import { CreateUserRequestBody, ListUsersRequestQuery, UpdateUserRequestBody } from './user.request'

@@ -3,6 +3,7 @@ version: '3'
 services:
   typescript-plane-boilerplate-db:
     build: ./db
+    platform: linux/amd64
     volumes:
       - ./db/data:/var/lib/mysql
       - ./db/initdb.d:/docker-entrypoint-initdb.d
