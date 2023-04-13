@@ -16,11 +16,14 @@
 import * as runtime from '../runtime';
 import type {
   CreateUserRequestBody,
+  CreateUserResponse,
   UpdateUserRequestBody,
 } from '../models';
 import {
     CreateUserRequestBodyFromJSON,
     CreateUserRequestBodyToJSON,
+    CreateUserResponseFromJSON,
+    CreateUserResponseToJSON,
     UpdateUserRequestBodyFromJSON,
     UpdateUserRequestBodyToJSON,
 } from '../models';
@@ -55,7 +58,7 @@ export class UserServiceApi extends runtime.BaseAPI {
     /**
      * Create a new user
      */
-    async userControllerCreateRaw(requestParameters: UserControllerCreateRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<void>> {
+    async userControllerCreateRaw(requestParameters: UserControllerCreateRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<CreateUserResponse>> {
         if (requestParameters.createUserRequestBody === null || requestParameters.createUserRequestBody === undefined) {
             throw new runtime.RequiredError('createUserRequestBody','Required parameter requestParameters.createUserRequestBody was null or undefined when calling userControllerCreate.');
         }
@@ -74,14 +77,15 @@ export class UserServiceApi extends runtime.BaseAPI {
             body: CreateUserRequestBodyToJSON(requestParameters.createUserRequestBody),
         }, initOverrides);
 
-        return new runtime.VoidApiResponse(response);
+        return new runtime.JSONApiResponse(response, (jsonValue) => CreateUserResponseFromJSON(jsonValue));
     }
 
     /**
      * Create a new user
      */
-    async userControllerCreate(requestParameters: UserControllerCreateRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<void> {
-        await this.userControllerCreateRaw(requestParameters, initOverrides);
+    async userControllerCreate(requestParameters: UserControllerCreateRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<CreateUserResponse> {
+        const response = await this.userControllerCreateRaw(requestParameters, initOverrides);
+        return await response.value();
     }
 
     /**
