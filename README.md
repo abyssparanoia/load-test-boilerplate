@@ -1,14 +1,12 @@
 # application-boilerplate
 
-A boilerplate for a web application composed of golang and typescript
+A boilerplate for load test by k6
 
 ## Apps
 
 | Package                                  | Localhost             | Prodction |
 | :--------------------------------------- | :-------------------- | :-------- |
-| **[[NEXT.JS] admin](./packages/admin)**  | http://localhost:3000 | admin.\*  |
 | **[[NEST.JS] api](./packages/backend)**  | http://localhost:3001 | api.\*    |
-| **[[Swagger] docs](./packages/backend)** | http://localhost:3002 |           |
 
 ## document links
 
