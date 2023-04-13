@@ -2,6 +2,7 @@ import { ApiProperty } from '@nestjs/swagger'
 import {
   IUser,
   CreateUserRequest,
+  CreateUserResponse as ICreateUserResponse,
   ExtractPropertyType,
   UpdateUserRequest,
   ListUsersRequest
@@ -38,6 +39,11 @@ export abstract class CreateUserRequestBody implements ExtractPropertyType<Creat
   @ApiProperty({ description: 'email address', example: 'taro@sample.com' })
   @IsString()
   email: string
+}
+
+export abstract class CreateUserResponse implements ICreateUserResponse {
+  @ApiProperty()
+  user: User
 }
 
 export abstract class UpdateUserRequestBody implements ExtractPropertyType<UpdateUserRequest, 'body'> {
