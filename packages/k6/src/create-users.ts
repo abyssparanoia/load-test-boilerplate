@@ -1,12 +1,6 @@
-import { sleep, check } from 'k6'
+import { group, sleep } from 'k6'
 import { Options } from 'k6/options'
-import http from 'k6/http'
-
-import {
-  randomString
-  /* @ts-ignore */
-} from 'https://jslib.k6.io/k6-utils/1.4.0/index.js'
-import { CreateUserRequestBody } from './generated'
+import { createUserScript } from './scripts/create-user-script.js'
 
 export let options: Options = {
   vus: 5,
@@ -14,13 +8,8 @@ export let options: Options = {
 }
 
 export default () => {
-  const body: CreateUserRequestBody = {
-    displayName: `Jon${randomString(1, 'aeiou')}s`,
-    email: `user_${randomString(10)}@example.com`
-  }
-  const res = http.post(`http://localhost:3001/users`, body as any)
-  check(res, {
-    'status is 201': () => res.status === 201
+  group('create user', () => {
+    createUserScript()
   })
   sleep(1)
 }
