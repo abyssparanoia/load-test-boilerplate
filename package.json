@@ -19,6 +19,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "8.0.3",
     "jest": "29.5.0",
     "lint-staged": "13.2.1",
@@ -43,10 +44,10 @@
       "packages/*"
     ],
     "nohoist": [
-      "**/@typescript-plane-boilerplate/admin/",
-      "**/@typescript-plane-boilerplate/admin/**",
-      "**/@typescript-plane-boilerplate/web/",
-      "**/@typescript-plane-boilerplate/web/**"
+      "**/@load-test-boilerplate/admin/",
+      "**/@load-test-boilerplate/admin/**",
+      "**/@load-test-boilerplate/web/",
+      "**/@load-test-boilerplate/web/**"
     ]
   },
   "husky": {

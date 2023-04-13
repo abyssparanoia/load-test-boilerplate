@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger'
-import { Pagination as IPagination } from '@typescript-plane-boilerplate/interface'
+import { Pagination as IPagination } from '@load-test-boilerplate/interface'
 import { IsOptional, IsNumber, IsBoolean } from 'class-validator'
 
 export abstract class PaginationQuery {

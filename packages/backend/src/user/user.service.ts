@@ -1,4 +1,4 @@
-import { ConflictException, Injectable, NotFoundException } from '@nestjs/common'
+import { Injectable, NotFoundException } from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
 import { FindManyOptions, IsNull } from 'typeorm'
 import { Transactional } from 'typeorm-transactional-cls-hooked'
@@ -30,15 +30,7 @@ export class UserService {
     return { users, ttlCnt }
   }
 
-  @Transactional()
   async create(param: Pick<User, 'displayName' | 'email'>) {
-    const user = await this.userRepository.findOne(undefined, {
-      where: { email: param.email, deletedAt: IsNull() }
-    })
-    if (user) {
-      throw new ConflictException('Already exists user')
-    }
-
     const now = datetime.nowUnixTimestampSec()
 
     const newUser = new User()

@@ -1,18 +1,26 @@
 # application-boilerplate
 
-A boilerplate for a web application composed of golang and typescript
+A boilerplate for load test by k6
 
 ## Apps
 
-| Package                                  | Localhost             | Prodction |
-| :--------------------------------------- | :-------------------- | :-------- |
-| **[[NEXT.JS] admin](./packages/admin)**  | http://localhost:3000 | admin.\*  |
-| **[[NEST.JS] api](./packages/backend)**  | http://localhost:3001 | api.\*    |
-| **[[Swagger] docs](./packages/backend)** | http://localhost:3002 |           |
+| Package                                 | Localhost             | Prodction |
+| :-------------------------------------- | :-------------------- | :-------- |
+| **[[NEST.JS] api](./packages/backend)** | http://localhost:3001 | api.\*    |
 
-## document links
+### sample
 
-| Title                                             |
-| :------------------------------------------------ |
-| **[typescript 環境構築](./docs/typescript.md)**   |
-| **[DB schema migration](./docs/db-migration.md)** |
+```bash
+# on root
+> yarn
+> yarn build
+
+> docker compose up -d
+> yarn workspace @load-test-boilerplate/backend migration:run
+> yarn workspace @load-test-boilerplate/backend start:dev
+
+# on packages/k6
+> k6 run -e API_HOST=http://localhost:3001 dist/create-users.js
+
+> k6 run -e API_HOST=http://localhost:3001 dist/create-and-get-users.js
+```
