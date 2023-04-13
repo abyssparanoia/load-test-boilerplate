@@ -1,5 +1,4 @@
 import {
-  CreateUserResponse,
   DeleteUserResponse,
   GetUserResponse,
   ListUsersResponse,
@@ -7,8 +6,8 @@ import {
   newPagination
 } from '@load-test-boilerplate/interface'
 import { Body, Controller, Delete, Get, Param, Patch, Post, Query } from '@nestjs/common'
-import { ApiOperation, ApiTags } from '@nestjs/swagger'
-import { CreateUserRequestBody, ListUsersRequestQuery, UpdateUserRequestBody } from './user.request'
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger'
+import { CreateUserRequestBody, ListUsersRequestQuery, UpdateUserRequestBody, CreateUserResponse } from './user.request'
 import { UserService } from './user.service'
 
 @ApiTags('UserService')
@@ -39,6 +38,7 @@ export class UserController {
 
   @ApiOperation({ summary: 'Create a new user' })
   @Post()
+  @ApiResponse({ status: 201, type: CreateUserResponse })
   async create(@Body() param: CreateUserRequestBody): Promise<CreateUserResponse> {
     return {
       user: await this.userService.create({ ...param })
