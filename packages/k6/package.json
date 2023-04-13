@@ -1,0 +1,38 @@
+{
+  "name": "@load-test-boilerplate/k6",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prebuild": "yarn clean",
+    "start": "ts-node-dev src/app/bootstrap.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@load-test-boilerplate/interface": "0.0.1",
+    "dotenv": "16.0.3",
+    "envalid": "7.3.1",
+    "@faker-js/faker": "^7.6.0",
+    "k6": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/k6": "^0.43.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
