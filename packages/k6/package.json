@@ -6,7 +6,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p ./tsconfig.json",
     "prebuild": "yarn clean",
     "start": "ts-node-dev src/app/bootstrap.ts",
     "clean": "rimraf dist"

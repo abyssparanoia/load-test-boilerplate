@@ -1,0 +1,8 @@
+.openapi-generator-ignore
+apis/UserServiceApi.ts
+apis/index.ts
+index.ts
+models/CreateUserRequestBody.ts
+models/UpdateUserRequestBody.ts
+models/index.ts
+runtime.ts

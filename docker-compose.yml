@@ -22,3 +22,16 @@ services:
       - ./packages/erd/src:/output
       - ./packages/erd/schemaspy.properties:/config/schemaspy.properties
     command: ['-configFile', '/config/schemaspy.properties', '-connprops', "useSSL\\=false"]
+
+  openapi:
+    image: openapitools/openapi-generator-cli:v6.5.0
+    volumes:
+      - ./packages:/work
+    command: |
+      generate -i
+      /work/backend/swagger.json
+      --generator-name typescript-fetch
+      --input-spec /work/backend/swagger.json
+      --output /work/k6/src/generated
+      --additional-properties=typescriptThreePlus=true
+      --skip-validate-spec
