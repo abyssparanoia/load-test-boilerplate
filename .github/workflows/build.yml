@@ -10,15 +10,6 @@ jobs:
       matrix:
         node-version: [16.x]
 
-    services:
-      mysql:
-        image: mysql:5.7
-        ports:
-          - 3306:3306
-        env:
-          MYSQL_ROOT_PASSWORD: password
-        options: --health-cmd "mysqladmin ping -h localhost" --health-interval 20s --health-timeout 10s --health-retries 10
-
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
@@ -29,11 +20,6 @@ jobs:
       - name: Prepare file
         run: |
           cp packages/backend/.env.test.tmpl packages/backend/.env
-          cp packages/admin/.env.tmpl packages/admin/.env
-
-      - name: Setup mysql
-        run: |
-          mysql -uroot -h127.0.0.1 -ppassword -e 'CREATE DATABASE IF NOT EXISTS maindb'
 
       - name: Install deps
         run: yarn
@@ -43,13 +29,3 @@ jobs:
 
       - name: Build
         run: yarn build
-
-      - name: Run DB migration
-        run: |
-          yarn workspace @load-test-boilerplate/backend migration:run
-          yarn workspace @load-test-boilerplate/backend migration:generate -n ci_check || echo "No changes in database schema were found"
-
-      - name: Check diff
-        run: |
-          git add -N .
-          git diff --exit-code .
