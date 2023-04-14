@@ -14,15 +14,6 @@ services:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: maindb
 
-  typescript-plane-boilerplate-schema:
-    depends_on:
-      - typescript-plane-boilerplate-db
-    image: schemaspy/schemaspy:snapshot
-    volumes:
-      - ./packages/erd/src:/output
-      - ./packages/erd/schemaspy.properties:/config/schemaspy.properties
-    command: ['-configFile', '/config/schemaspy.properties', '-connprops', "useSSL\\=false"]
-
   openapi:
     image: openapitools/openapi-generator-cli:v6.5.0
     volumes:
