@@ -994,9 +994,9 @@
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
 
 "@types/k6@^0.44.0":
-  version "0.44.1"
-  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.44.1.tgz#63ca4d9d46e0b78fa7ed6141135dc10f7e844ea6"
-  integrity sha512-VTc4Z55WdCTRgXMz1YhWL0KiQNuGiqzXhApCv6oIA4eqD6b99ZB6zmuZZqiAOU1NL/JELzplwfriHEsHNOIxjw==
+  version "0.44.3"
+  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.44.3.tgz#bbd6c7ebed1970f537fce8d46af41d3d19631ac2"
+  integrity sha512-Ulu+xGZZQhZfk3hpLRo7oj69oSMBUfK7+FYdUtD3Dsj+nPyWQAH6j/GX5rLuHJ4SWZkdyEZ7Xmam7tBM8G2Srw==
 
 "@types/mime@*":
   version "3.0.1"
@@ -1009,9 +1009,9 @@
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
 
 "@types/node@*":
-  version "18.11.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.3.tgz#78a6d7ec962b596fc2d2ec102c4dd3ef073fea6a"
-  integrity sha512-fNjDQzzOsZeKZu5NATgXUPsaFaTxeRgFXoosrHivTl8RGeV733OLawXsGfEk9a8/tySyZUyiZ6E8LcjPFZ2y1A==
+  version "20.3.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.3.1.tgz#e8a83f1aa8b649377bb1fb5d7bac5cb90e784dfe"
+  integrity sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==
 
 "@types/node@14.18.48":
   version "14.18.48"
@@ -1019,9 +1019,9 @@
   integrity sha512-iL0PIMwejpmuVHgfibHpfDwOdsbmB50wr21X71VnF5d7SsBF7WK+ZvP/SCcFm7Iwb9iiYSap9rlrdhToNAWdxg==
 
 "@types/prettier@^2.1.5":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.1.tgz#dfd20e2dc35f027cdd6c1908e80a5ddc7499670e"
-  integrity sha512-ri0UmynRRvZiiUJdiz38MmIblKK+oH30MztdBVR95dv/Ubw6neWSb8u1XpRb72L4qsZOhz+L+z9JD40SJmfWow==
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.3.tgz#3e51a17e291d01d17d3fc61422015a933af7a08f"
+  integrity sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==
 
 "@types/prop-types@*":
   version "15.7.5"
