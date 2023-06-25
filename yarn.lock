@@ -993,10 +993,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
 
-"@types/k6@^0.44.0":
-  version "0.44.1"
-  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.44.1.tgz#63ca4d9d46e0b78fa7ed6141135dc10f7e844ea6"
-  integrity sha512-VTc4Z55WdCTRgXMz1YhWL0KiQNuGiqzXhApCv6oIA4eqD6b99ZB6zmuZZqiAOU1NL/JELzplwfriHEsHNOIxjw==
+"@types/k6@^0.45.0":
+  version "0.45.0"
+  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.45.0.tgz#0d678cdbbb2d54fd057296835a11b36b3be6ab96"
+  integrity sha512-ySQ1LQ67kqYz/4W6oJ/9afPWHV/2GYKVUQFkOzM+fBtY2POCY8D7GX4F6rT0R8u2Be/DK8s1Ypr2s+LbToj/oA==
 
 "@types/mime@*":
   version "3.0.1"
