@@ -15,7 +15,7 @@ services:
       MYSQL_DATABASE: maindb
 
   openapi:
-    image: openapitools/openapi-generator-cli:v7.1.0
+    image: openapitools/openapi-generator-cli:v7.2.0
     volumes:
       - ./packages:/work
     command: |
