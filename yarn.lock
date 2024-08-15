@@ -1028,10 +1028,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
-"@types/k6@^0.48.0":
-  version "0.48.0"
-  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.48.0.tgz#7a2a1322e3aef5e6496d67b3735c485976e38ba4"
-  integrity sha512-TobNNdz8XAr2xjg7sT0janwMpi54wKvBMklgVrrEl4X/Caw3WdFhzbF9yjTEr8TZmFad4ZDxechYeIuRowfhlA==
+"@types/k6@^0.53.0":
+  version "0.53.0"
+  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.53.0.tgz#2bba27db67a40bc0b6392cf3753f51cd2495c28b"
+  integrity sha512-5gvPxn4I7b08AS0UZPjYALg4rg4rslSNVfHPiZ1ta0EEwsJOd+uKMkvwGkQOKy0a/8HAfthxD61Qci1kXcJOjg==
 
 "@types/mime@*":
   version "3.0.4"

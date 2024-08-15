@@ -19,7 +19,7 @@
     "k6": "^0.0.0"
   },
   "devDependencies": {
-    "@types/k6": "^0.48.0"
+    "@types/k6": "^0.53.0"
   },
   "jest": {
     "moduleFileExtensions": [
