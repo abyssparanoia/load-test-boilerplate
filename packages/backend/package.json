@@ -37,7 +37,7 @@
     "generate-password": "1.7.1",
     "mysql": "2.18.1",
     "reflect-metadata": "0.2.2",
-    "rimraf": "5.0.5",
+    "rimraf": "5.0.10",
     "rxjs": "7.8.1",
     "swagger-ui-express": "4.6.3",
     "typeorm": "0.2.45",
