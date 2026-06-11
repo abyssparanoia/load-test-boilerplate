@@ -974,10 +974,10 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
-"@types/generate-password@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@types/generate-password/-/generate-password-1.5.1.tgz#bd2d7296ad51fb0f3819be67acf60623f53da1f8"
-  integrity sha512-VGu9m+z/Itv9GzdiB9VCD3Y2f5VX+tI7OXE/ttBtQPPokl3eIVdahslvK7C18zhjbSoq3yzFbbDzEFwvBwa3bw==
+"@types/generate-password@1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@types/generate-password/-/generate-password-1.5.3.tgz#7594249839245003e3b74119c4817b95ff06b119"
+  integrity sha512-Ws51x9+fPN9y9x7GkPPDizi897euWcKBljGq298Z8336vFhXIy1uVekgvRSpM1LZHNXwZYuDHLtBWHaY+0C8Dw==
   dependencies:
     generate-password "*"
 
