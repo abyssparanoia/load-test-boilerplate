@@ -1080,13 +1080,13 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.6.tgz#7cb33992049fd7340d5b10c0098e104184dfcd2a"
   integrity sha512-+0autS93xyXizIYiyL02FCY8N+KkKPhILhcUSA276HxzreZ16kl+cmwvV2qAM/PuCCwPXzOXOWhiPcw20uSFcA==
 
-"@types/react@18.3.11":
-  version "18.3.11"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.11.tgz#9d530601ff843ee0d7030d4227ea4360236bd537"
-  integrity sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==
+"@types/react@18.3.32":
+  version "18.3.32"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.32.tgz#354289c02f52b1fe03c1c38c73af42a426b8c2b1"
+  integrity sha512-hKTeN+STHjfr2eS1uLImPsGpmIQD5SD8DUTQ+14zSne5CTwRpYh25ggOKG/pFIs2r0JmNYrSv4ZqIL07ipSvOA==
   dependencies:
     "@types/prop-types" "*"
-    csstype "^3.0.2"
+    csstype "^3.2.2"
 
 "@types/rimraf@3.0.2":
   version "3.0.2"
@@ -2164,10 +2164,10 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-csstype@^3.0.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
-  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
+csstype@^3.2.2:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.2.4.tgz#e3c565add00793c36f089cc14b70d04d784daa19"
+  integrity sha512-PoKaoPzQapnEoqUSnHx1u6W6ku8CVEgKsnpmmzU3m1nwkidpPBQ8V/Zq2+bWNrsOKoKLwTGdbx6xF7BXP1zLVQ==
 
 data-view-buffer@^1.0.1:
   version "1.0.1"
